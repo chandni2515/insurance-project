@@ -1,0 +1,23 @@
+/*CHANDNI PATEL CS610 1614 prp*/
+
+”HANDOUT 2 ADHERED; NO BUGS TO REPORT”
+
+Compilation and Execution Instructions:
+
+-->pagerank
+
+javac pgrk1614.java
+
+java pgrk1614 number_of_interations initial_value inputfile
+
+-->hits
+
+javac hits1614.java
+
+java hits1614 number_of_interations initial_value inputfile
+
+-->huffman
+
+gcc huffman.c
+
+gcc -o hf huffman.c
