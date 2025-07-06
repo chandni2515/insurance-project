@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beneva-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: beneva-backend
+  template:
+    metadata:
+      labels:
+        app: beneva-backend
+    spec:
+      containers:
+      - name: backend
+        image: beneva-backend:latest
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beneva-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: beneva-frontend
+  template:
+    metadata:
+      labels:
+        app: beneva-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: beneva-frontend:latest
+        ports:
+        - containerPort: 3000
