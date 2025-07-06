@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build Backend') {
+            steps {
+                sh 'mvn -f backend/pom.xml package -DskipTests'
+            }
+        }
+        stage('Build Frontend') {
+            steps {
+                sh 'npm --prefix frontend install'
+                sh 'npm --prefix frontend run build'
+            }
+        }
+        stage('Docker Build') {
+            steps {
+                sh 'docker-compose build'
+            }
+        }
+    }
+}
