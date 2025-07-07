@@ -1,0 +1,10 @@
+com\beneva\sample\claim\ClaimController.class
+com\beneva\sample\policy\PolicyService.class
+com\beneva\sample\claim\ClaimRepository.class
+com\beneva\sample\claim\ClaimService.class
+com\beneva\sample\claim\ClaimManagementApplication.class
+com\beneva\sample\policy\PolicyController.class
+com\beneva\sample\claim\Claim.class
+com\beneva\sample\policy\Policy.class
+com\beneva\sample\policy\PolicyBuilderApplication.class
+com\beneva\sample\policy\PolicyRepository.class
