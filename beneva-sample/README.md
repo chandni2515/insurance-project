@@ -11,8 +11,14 @@ This sample project demonstrates a simplified version of the **Policy Builder** 
 
 ## Frontend
 * React 17
-* Webpack configuration
+* Webpack configuration with Babel
 * Dockerfile for containerization
+
+### Running the Frontend
+1. Install Node.js 14 or later.
+2. From the `frontend` folder run `npm install` to install React, Webpack and
+   Babel dependencies.
+3. Start the development server with `npm start`.
 
 ## Infrastructure
 * `docker-compose.yml` for local setup
