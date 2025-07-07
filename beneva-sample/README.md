@@ -9,6 +9,19 @@ This sample project demonstrates a simplified version of the **Policy Builder** 
 * Dockerfile for containerization
 * Jenkinsfile for CI
 
+### Running the Backend
+Compile the project with Maven and use the `BackendApplication` entry point
+located under `com.beneva.sample.util`. Specify which module to run using one of
+the following options:
+
+```bash
+mvn package
+java -cp target/backend-0.0.1-SNAPSHOT.jar \
+    com.beneva.sample.util.BackendApplication claim
+```
+
+Valid arguments are `claim`, `policy` or `all` to start both modules.
+
 ## Frontend
 * React 17
 * Webpack configuration with Babel
